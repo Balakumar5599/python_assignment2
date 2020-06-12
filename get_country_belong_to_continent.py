@@ -5,9 +5,9 @@ print("Enter the keys and values of the dictionary seperated by colon: ")
 input_dict={}
 for dict_item in range(0,len_of_dict):
     key,value=input().split(":")
-    input_dict[key]=value
+    input_dict[key]=value.capitalize()
 print(input_dict)
-continent=input("Enter the continent name: ")
+continent=input("Enter the continent name: ").capitalize()
 print("Countries that belongs to the continent: ")
 for key,value in input_dict.items():
     if continent==value:
@@ -21,7 +21,7 @@ print()
 
 def get_country(given_dict):
 
-    continent=input("Enter the continent name: ")
+    continent=input("Enter the continent name: ").capitalize()
     print("Countries that belongs to the continent: ")
     for key,value in given_dict.items():
         if continent==value:
