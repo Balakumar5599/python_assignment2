@@ -1,10 +1,10 @@
-inp_num=input()
+inp_num=input("Enter the number ")
 list1=[]
-for i in inp_num:
-    list1.append((i))
+for items in inp_num:
+    list1.append((items))
 list1.sort(reverse=True)
-s=''
+large_num=''
 for x in list1:
-    s=s+x
-print(s)
+    large_num=large_num+x
+print(large_num)
 #print(list1)
